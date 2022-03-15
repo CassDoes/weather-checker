@@ -1,2 +1,2 @@
 var timeEl = document.querySelector('.currentTime');
-todayEl.innerHTML = moment().format("MMMM Do, YYYY");
+timeEl.innerHTML = moment().format("MMMM Do, YYYY");

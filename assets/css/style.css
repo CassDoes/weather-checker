@@ -1,0 +1,46 @@
+body {
+    font-family: "Open Sans", sans-serif;
+  }
+
+h1, h2, h3 {
+  font-family: "Yantramanav", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(50deg, #253da1 0%, #02198b 52%, #000137 90%);
+  }
+
+  header p {
+      font-size: 25px;
+  }
+  
+  main {
+      padding: 20px;
+  }
+
+  .infoDisplay {
+      padding: 5px;
+      border: 1px solid black;
+  }
+
+  .searchBtn, textarea {
+      width: 100%;
+  }
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Checker</title>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Checker</h1>
+        <p class="currentTime"></p>
+    </header>
+
+    <main class="row">
+        <aside class="col-3">
+            <h2>Search for a City:</h2>
+            <textarea class="textarea" placeholder="Type a city here"></textarea>
+            <button class="searchBtn">Search</button>
+            <ul>Search History
+                <li>austin</li>
+                <li>seattle</li>
+                <li>denver</li>
+            </ul>
+        </aside>
+        <div class="col-9">
+            <div class="infoDisplay">
+                <h2>Display City Name</h2>
+                <div>Temp</div>
+                <div>Wind</div>
+                <div>Humidity</div>
+                <div>UV Index</div>
+            </div>
+    
+            <h3>5-Day Forecast</h3>
+            <div class="row justify-content-around">
+                <div class="col">4-1-22</div>
+                <div class="col">4-2-22</div>
+                <div class="col">4-3-22</div>
+                <div class="col">4-4-22</div>
+                <div class="col">4-5-22</div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
