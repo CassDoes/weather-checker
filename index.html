@@ -23,37 +23,33 @@
     <main class="row">
         <aside class="col-3">
             <h2>Search for a City:</h2>
-            <textarea class="textarea" placeholder="Type a city here"></textarea>
+            <input class="textarea" placeholder="Type a city here"></input>
             <button class="searchBtn">Search</button>
-            <ul>Search History
-                <li>austin</li>
-                <li>seattle</li>
-                <li>denver</li>
-            </ul>
+            <ul class="search-history">Search History:</ul>
         </aside>
         <div class="col-9">
             <div class="infoDisplay">
-                <h2>Display City Name</h2>
+                <h2 class="city-name">Current Forecast:</h2>
                 <ul>
-                    <li class="temp"></li>
-                    <li class="wind"></li>
-                    <li class="humidity"></li>
-                    <li class="uv-index">UV Index</li>
+                    <li class="temp">Temp:</li>
+                    <li class="wind">Wind:</li>
+                    <li class="humidity">Humidity:</li>
+                    <li class="uv-index">UV Index:</li>
                 </ul>
             </div>
     
             <h3>5-Day Forecast</h3>
             <div class="row justify-content-around">
-                <div class="col">4-1-22</div>
-                <div class="col">4-2-22</div>
-                <div class="col">4-3-22</div>
-                <div class="col">4-4-22</div>
-                <div class="col">4-5-22</div>
+                <div class="col card">4-1-22</div>
+                <div class="col card">4-2-22</div>
+                <div class="col card">4-3-22</div>
+                <div class="col card">4-4-22</div>
+                <div class="col card">4-5-22</div>
             </div>
         </div>
     </main>
     
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
