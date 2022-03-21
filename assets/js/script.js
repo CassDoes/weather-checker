@@ -9,8 +9,7 @@ timeEl.innerHTML = moment().format("h:mm a");
 //get search information
 $(document).ready(function() {
     $(".searchBtn").on("click", function() {
-      var textareaEl = $(".textarea").val();
-  
+        var textareaEl = $('.textarea').val();
       $(".textarea").val("");
   
       getWeather(textareaEl);
@@ -61,21 +60,22 @@ var getWeather = function(textareaEl) {
             alert("You must enter a valid City")
         }
 
-        //supposed to add to the 5-day forecast but I'm doing it incorrectly
-        var getForecast = function(textareaEl) {
-            var apiForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + textareaEl + "&units=imperial&appid=f9f4a80742920ffda486898fcfc585db";
-            fetch(apiForecast).then(function(response) {
-                if (response.ok) {
-                    response.json().then(function(data) {
-                        console.log(data);
-                    var cardEl = document.querySelector('.card');
-                    cardEl.textContent = "Temp: " + data.main.temp + "°F";
-    
-                });
-                
-            }
-        })
-
         getForecast();
-    }
-    })};
+    });
+};
+
+//supposed to add to the 5-day forecast but I'm doing it incorrectly
+var getForecast = function(textareaEl) {
+
+    var apiForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + textareaEl + "&units=imperial&appid=f9f4a80742920ffda486898fcfc585db";
+    fetch(apiForecast).then(function(response) {
+        if (response.ok) {
+            response.json().then(function(data) {
+                var tempEl = document.querySelector('.card');
+                tempEl.textContent = "Temp: " + data.main.temp + "°F";
+    
+            });
+        }
+    
+    });
+};
